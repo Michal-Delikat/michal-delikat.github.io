@@ -1,0 +1,14 @@
+#header {
+    text-align: center;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#footer #copyright-tag {
+    text-align: center;
+}

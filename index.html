@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Michał Delikat Portfolio</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1>Michał Delikat <br>Portfolio</h1>
+        </header>
+        <main>
+            <h2>Individual Works</h2>
+            <ul>
+                <li>
+                    <div>
+                        <h3>maciekginalski.com</h3>
+                        <p>This is a portfolio website for a polish photographer Maciek Gianalski</p>
+                        <a href="https://maciekginalski.com" target="_blank">maciekginalski.com</a>
+                    </div>
+                </li>
+            </ul>
+        </main>
+        <footer id="footer"><p id="copyright-tag">&copy; Michał Delikat <span id="year"></span></p></footer>
+        <script>
+            const year = document.getElementById('year');
+            year.innerHTML = new Date().getFullYear();
+        </script>
+    </body>
+</html>

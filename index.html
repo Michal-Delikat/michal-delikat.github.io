@@ -1,29 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Michał Delikat Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Michał Delikat — Portfolio</title>
+        <meta name="description" content="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@1,500;1,600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <header id="header">
-            <h1>Michał Delikat <br>Portfolio</h1>
+            <div class="container header-inner">
+                <a href="#top" class="logo"></a>
+                <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <nav class="nav" id="primary-nav"></nav>
+            </div>
         </header>
-        <main>
-            <h2>Individual Works</h2>
-            <ul>
-                <li>
-                    <div>
-                        <h3>maciekginalski.com</h3>
-                        <p>This is a portfolio website for a polish photographer Maciek Gianalski</p>
-                        <a href="https://maciekginalski.com" target="_blank">maciekginalski.com</a>
+
+        <main id="top">
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-text">
+                        <h1></h1>
+                        <p class="lead"></p>
+                        <div class="hero-actions"></div>
                     </div>
-                </li>
-            </ul>
+                    <div class="hero-visual"></div>
+                </div>
+            </section>
+
+            <section id="projects" class="section"></section>
+
+            <section id="services" class="section section-alt"></section>
+
+            <section id="process" class="section"></section>
+
+            <section id="about" class="section section-alt"></section>
+
+            <section id="contact" class="section"></section>
         </main>
-        <footer id="footer"><p id="copyright-tag">&copy; Michał Delikat <span id="year"></span></p></footer>
-        <script>
-            const year = document.getElementById('year');
-            year.innerHTML = new Date().getFullYear();
-        </script>
+
+        <footer id="footer">
+            <div class="container footer-inner">
+                <p id="copyright-tag"></p>
+            </div>
+        </footer>
+
+        <script src="content/content.js"></script>
+        <script src="js/render.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

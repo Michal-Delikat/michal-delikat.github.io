@@ -63,9 +63,10 @@ const content = {
             eyebrow: "SERVICES",
             heading: "From design to launch. Everything your website needs.",
             intro:
-                "I work with small businesses and freelancers. You get one person " +
-                "who designs, builds, launches and looks after your website, so nothing " +
-                "falls between the cracks.",
+                "One point of contact for your whole website, from first sketch to " +
+                "ongoing care. When a project needs more, like professional photography or " + 
+                "copywriting, I bring in trusted collaborators, so nothing falls between " +
+                "the cracks.",
             cards: [
                 {
                     icon: "",
@@ -142,35 +143,30 @@ const content = {
                     title: "Conversation & brief",
                     description:
                         "We talk about your business, your customers and your goals, and look at " +
-                        "what your competitors are doing.",
-                    you: "tell me about your business and share examples you like."
+                        "what your competitors are doing."
                 },
                 {
                     title: "Design",
                     description:
                         "I prepare a mockup with layout, typography and colours for your approval " +
-                        "before building anything.",
-                    you: "review the design and give feedback."
+                        "before building anything."
                 },
                 {
                     title: "Build",
                     description:
-                        "I develop the website, set up the technical SEO and add your content.",
-                    you: "send texts and images (I can help you shape them)."
+                        "I develop the website, set up the technical SEO and add your content."
                 },
                 {
                     title: "Launch",
                     description:
                         "Domain, hosting, testing and going live. I make sure everything works " +
-                        "on every device.",
-                    you: "final approval."
+                        "on every device."
                 },
                 {
                     title: "Care",
                     description:
                         "After launch I keep your website updated, secure and improving, as much " +
-                        "or as little as you need.",
-                    you: "reach out whenever you need a change."
+                        "or as little as you need."
                 }
             ]
         },

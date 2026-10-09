@@ -206,11 +206,6 @@
             item.appendChild(el("h3", "process-step-title", step.title));
             item.appendChild(el("p", "process-step-desc", step.description));
 
-            const you = el("p", "process-you");
-            you.appendChild(el("strong", null, "You:"));
-            you.appendChild(document.createTextNode(" " + step.you));
-            item.appendChild(you);
-
             steps.appendChild(item);
         });
         container.appendChild(steps);

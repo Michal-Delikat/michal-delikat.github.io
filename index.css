@@ -61,6 +61,10 @@ a {
 }
 
 /* Header */
+site-header {
+    display: block;
+}
+
 #header {
     position: sticky;
     top: 0;
@@ -385,6 +389,7 @@ a {
     gap: 24px;
 }
 
+project-card,
 .project-card {
     display: flex;
     gap: 24px;
@@ -503,6 +508,10 @@ a {
 }
 
 /* Footer */
+site-footer {
+    display: block;
+}
+
 #footer {
     background: var(--accent);
     padding: 28px 0;
@@ -520,6 +529,24 @@ a {
     margin: 0;
     color: rgba(255, 255, 255, 0.75);
     font-size: 0.9rem;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+/* Plain page (e.g. privacy policy) */
+.page-plain {
+    background: #fff;
+    min-height: calc(100vh - 68px);
+    padding: 72px 0;
 }
 
 /* Responsive */
@@ -622,6 +649,7 @@ a {
         padding: 56px 0;
     }
 
+    project-card,
     .project-card {
         flex-direction: column-reverse;
         gap: 0;

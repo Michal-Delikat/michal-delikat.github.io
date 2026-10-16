@@ -11,23 +11,13 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header id="header">
-            <div class="container header-inner">
-                <a href="#top" class="logo">Michał Delikat</a>
-                <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
-                    <span class="nav-toggle-bar"></span>
-                    <span class="nav-toggle-bar"></span>
-                    <span class="nav-toggle-bar"></span>
-                </button>
-                <nav class="nav" id="primary-nav">
-                    <a href="#projects">Projects</a>
-                    <a href="#services">Services</a>
-                    <a href="#process">Process</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-        </header>
+        <site-header id="header" brand="Michał Delikat">
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </site-header>
 
         <main id="top">
             <section class="hero">
@@ -50,31 +40,16 @@
 
                     <h3 class="subsection-title">Client work</h3>
                     <div class="projects-grid">
-                        <article class="project-card">
-                            <div class="project-logo">
-                                <img src="assets/maciekginalskicom_thumbnail.png" alt="maciekginalski.com logo">
-                            </div>
-                            <div class="project-body">
-                                <h3>maciekginalski.com</h3>
-                                <p>Portfolio website for Hotel &amp; Lifestyle photographer Maciek Ginalski.</p>
-                                <a class="project-link" href="https://maciekginalski.com" target="_blank" rel="noopener">Visit site →</a>
-                            </div>
-                        </article>
+                        <project-card
+                            logo="assets/maciekginalskicom_thumbnail.png"
+                            logo-alt="maciekginalski.com logo"
+                            title="maciekginalski.com"
+                            description="Portfolio website for Hotel &amp; Lifestyle photographer Maciek Ginalski."
+                            link-text="Visit site"
+                            link-href="https://maciekginalski.com"></project-card>
                     </div>
 
-                    <h3 class="subsection-title">Other projects</h3>
                     <div class="projects-grid">
-                        <article class="project-card">
-                            <div class="project-logo">
-                                <img class="logo-cover" src="assets/maquis_thumbnail.png" alt="Maquis box art">
-                            </div>
-                            <div class="project-body">
-                                <h3>Maquis for Board Game Arena</h3>
-                                <p>A digital adaptation of the acclaimed board game, published on Board Game Arena under the license of Side Room Games. I implemented the game logic, user interface, and collaborated with the publisher and platform through development and release.
-                                It reached 5,000+ plays within two months and earned glowing player reviews.</p>
-                                <a class="project-link" href="https://pl.boardgamearena.com/gamepanel?game=maquis" target="_blank" rel="noopener">Play it →</a>
-                            </div>
-                        </article>
                     </div>
                 </div>
             </section>
@@ -83,7 +58,7 @@
                 <div class="container">
                     <p class="eyebrow">SERVICES</p>
                     <h2 class="section-title">From design to launch. Everything your website needs.</h2>
-                    <p class="section-intro">One point of contact for your whole website, from first sketch to ongoing care. When a project needs more, like professional photography or copywriting, I bring in trusted collaborators, so nothing falls between the cracks.</p>
+                    <p class="section-intro">One point of contact for your whole website, from first sketch to ongoing care.</p>
 
                     <div class="services-grid">
                         <article class="service-card">
@@ -217,11 +192,7 @@
             </section>
         </main>
 
-        <footer id="footer">
-            <div class="container footer-inner">
-                <p id="copyright-tag">© <span id="year">2026</span> Michał Delikat</p>
-            </div>
-        </footer>
+        <site-footer id="footer" brand="Michał Delikat" privacy-href="/privacy_policy.html"></site-footer>
 
         <script src="js/script.js"></script>
     </body>
